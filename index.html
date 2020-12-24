@@ -68,10 +68,10 @@
     <main>
         <div class="container-fluid p-0">
             <div class="site-content">
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center" >
                     <div class="d-flex flex-column">
-                        <h1 class="site-title">Welcome to Procode</h1>
-                        <p class="site-desc">We are here to make your coding skills better.</p>
+                          <p class="line-1 anim-typewriter site-title">Welcome to Procode</p>
+                        <p class="site-desc" style="width:460px">We are here to make your coding skills better.</p>
 
                         <div class="d-flex flex-row">
                             <input type="button" value="<Code />" class="btn site-btn1 px-4 py-3 mr-4 btn-dark">
@@ -248,29 +248,8 @@
         <!-- Scroll reveal script -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script>
-        var controller = new ScrollMagic.Controller();
-        var revealElements = document.getElementsByClassName("service");
-				for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-					new ScrollMagic.Scene({
-										triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-										offset: 50,												 // start a little later
-										triggerHook: 0.9,
-									})
-									.setClassToggle(revealElements[i], "visible") // add class toggle
-									.addTo(controller);
-                }
-        
-        var nIntervId = setInterval(navColorChange, 10);
-        function navColorChange(){
-            if($(window).scrollTop() > 10){
-                $('nav').css('backgroundColor', '#f9f9f9');
-            }else{
-                $('nav').css('backgroundColor', 'white');
-            }
-        };
 
-    </script>
+    <script src="procode.js"></script>
 </body>
 
 </html>
