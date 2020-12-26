@@ -241,20 +241,21 @@ body{
 /* Code for responsiveness of the website */
 @media screen and (max-width: 768px){
     .section1 .card{
-        width: 14rem;;
+        width: 14rem;
     }
 
     .section4 .col-md-7 img{
         width: 292px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 325px){
     
     .row .justify-content-center .text-center{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     .site-content .site-title{
         font-size: 30px;
         padding-left: 15%;
@@ -281,6 +282,7 @@ body{
 
     .section1 .card{
         width: 15rem;
+        height: 550px;
     }
 
     .section4 .col-md-5{
