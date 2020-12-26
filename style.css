@@ -248,7 +248,13 @@ body{
         width: 292px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 450px){
+    
+    .row .justify-content-center .text-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .site-content .site-title{
         font-size: 30px;
         padding-left: 15%;
@@ -257,6 +263,8 @@ body{
     .site-content .site-btn2{
         display: none;
     }
+    
+    
 
     .site-content .site-btn1{
         margin-left: 15%;
