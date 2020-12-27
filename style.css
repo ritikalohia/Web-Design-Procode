@@ -54,7 +54,7 @@ nav {
 .site-title{
     margin-top: 30%;
     margin-bottom: 6%;
-    font-size: 50px;
+    font-size: 45px;
     color: wheat;
 }
 
@@ -62,7 +62,7 @@ nav {
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
     overflow: hidden;   
-    max-width: 478px;
+    max-width: 430px;
 }
 
 /* Animation of welcome to Procode*/
@@ -81,9 +81,9 @@ nav {
 
 .site-desc{
     font-size: 18px;
-    padding-left: 10%;
+    text-align: center;
     color: wheat;
-
+    width:430px;
 }
 
 .site-btn1{
@@ -297,6 +297,20 @@ nav {
 
     footer input[type="button"]{
         margin-top: 5%;
+    }
+}
+
+@media (max-width: 400px ) {
+    .site-title{
+        font-size: 37px;
+    }
+
+    .line-1{
+        max-width: 93vw;
+    }
+
+    .site-desc{
+        width: 95vw;
     }
 }
 
