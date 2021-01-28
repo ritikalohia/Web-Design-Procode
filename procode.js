@@ -2,6 +2,7 @@
 
 var controller = new ScrollMagic.Controller();
 var revealElements = document.getElementsByClassName("service");
+var dark = 0;
                 
 for (var i=0; i<revealElements.length; i++) { // create a scene for each element
     new ScrollMagic.Scene({
@@ -15,10 +16,32 @@ for (var i=0; i<revealElements.length; i++) { // create a scene for each element
         
 var nIntervId = setInterval(navColorChange, 10);
 function navColorChange(){
-    if($(window).scrollTop() > 10){
-        $('nav').css('backgroundColor', '#f9f9f9');
+    if(dark === 0 )
+    {
+        if($(window).scrollTop() > 10) {
+            $('nav').css('backgroundColor', '#EC9CFF');
+        }else{
+            $('nav').css('backgroundColor', 'white');
+        }
     }else{
-        $('nav').css('backgroundColor', 'white');
+        if($(window).scrollTop() > 10) {
+            $('nav').css('backgroundColor', '#DA009F');
+        }else{
+            $('nav').css('backgroundColor', '#EC9CFF');
+        }
     }
 };
+
+
+
+// Listen for a click on the button
+$(".custom-switch").on("click", function(){
+    if (document.getElementById('customSwitch1').checked){
+        document.body.classList.add("dark-theme");
+        dark=1;
+    }else {
+        document.body.classList.remove("dark-theme");
+        dark =0;
+    }
+})
 

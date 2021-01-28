@@ -8,8 +8,14 @@ body{
     font-family: 'Andika New Basic', sans-serif;
 }
 
+body.dark-theme{
+    background-color:#020024;
+    color: white;
+}
+
 nav {
     font-family: 'Lato';
+    transition: 1s;
 }
 
 .navbar-brand{
@@ -25,11 +31,23 @@ nav {
     font-family: 'Roboto Condensed';
 }
 
+body.dark-theme .nav-link{
+    color: white !important;
+}
+
 .nav-link:hover{
     color: #00E8E8 !important;
 }
 
+body.dark-theme .nav-link:hover{
+    color: #00E8E8 !important;
+}  
+
 .active .nav-link{
+    color: #00E8E8 !important;
+}
+
+body.dark-theme .active .nav-link{
     color: #00E8E8 !important;
 }
 
@@ -98,7 +116,17 @@ nav {
 
 .site-btn1, .site-btn2{
     margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.custom-control{
+    font-size: 20px;
+    color: white;
     margin-bottom: 40%;
+}
+
+.custom-switch .custom-control-label::before , .custom-switch .custom-control-label::after{
+    margin-top: 5px;
 }
 
 
@@ -170,7 +198,6 @@ nav {
 
 .section3 h1{
     font-family: 'Righteous';
-    color: rgba(0,0,0,0.5);
 }
 
 .section3 .review{
